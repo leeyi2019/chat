@@ -7,12 +7,8 @@ export default defineConfig({
   server: {
       proxy: {
         '/api': {
-          target: '43.153.34.161:6666',
-          ws: true,
-          changOrigin: true,
-          pathRewrite: {
-              '^/api': ''
-          }
+          target: 'http://43.153.34.161:1234',
+          changOrigin: true
         }
       }
     }
