@@ -35,7 +35,7 @@ export default {
         this.messages[i].push(message);
 
         try {
-          const response = await axios.post('https://api.openai.com/v1/chat/completions', {
+          const response = await axios.post('/api/v1/chat/completions', {
             model: 'gpt-3.5-turbo', // Update with the desired model
             messages: [
               { role: 'system', content: 'You are User' },
